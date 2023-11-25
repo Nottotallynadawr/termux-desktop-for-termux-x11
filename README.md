@@ -37,7 +37,7 @@ More information about installation is [here](https://wiki.termux.com/wiki/Main_
 
 ### Preparation
 
-Install `Termux` & `Termux:API` on your phone. It's recommended to install *Termux API* application as many desktop elements are dependent on it.
+Install `Termux` & `Termux:API` Also `Termux-x11` on your phone. It's recommended to install *Termux API* application as many desktop elements are dependent on it.
 
 > Old Test Device
 > This setup is created and tested on :
