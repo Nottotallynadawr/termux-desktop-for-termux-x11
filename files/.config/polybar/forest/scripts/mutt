@@ -1,3 +1,0 @@
-#!/data/data/com.termux/files/usr/bin/sh
-
-xfce4-terminal -e mutt
