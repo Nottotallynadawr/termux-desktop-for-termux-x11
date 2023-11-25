@@ -42,9 +42,9 @@ banner() {
 		${RED}│${GREEN}░░░░█░░█▀▀░█▀▄░█░█░█░█░▄▀▄░░░█░█░█▀▀░▀▀█░█▀▄░░█░░█░█░█▀▀░░${RED}│
 		${RED}│${GREEN}░░░░▀░░▀▀▀░▀░▀░▀░▀░▀▀▀░▀░▀░░░▀▀░░▀▀▀░▀▀▀░▀░▀░░▀░░▀▀▀░▀░░░░${RED}│
 		${RED}└──────────────────────────────────────────────────────────┘
-		${BLUE} For X11!
+		${RED} For X11!
 		${BLUE}By : Aditya Shakya // @adi1090x
-		${BLUE}Modifiyed By Nadawr
+		${BLUE}Modified By Nadawr
 	EOF
 }
 
