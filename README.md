@@ -2,6 +2,7 @@
 
 > Unmaintained : Due to Termux not working properly on new Android versions and also Termux not getting maintained properly.
 
+> 'UNOFFICIAL' This Is A Fork, And This Is Still In Work, Attention To Some Things May Be Bad.
 ---
 
 ![logo](./previews/logo.png) <br />
@@ -21,6 +22,11 @@ Alright, Lets just get this straight, these are just some **dotfiles** & **scrip
 |![desktop](./previews/main_1.png)|![desktop](./previews/main_2.png)|
 
 Lets start from the beginning... <br />
+
+### Why This?
+
+The Original Repository Uses VNC, Which Is A Bit Outdated, And This Is To Make It Newer However There Can Be Issues Since Its Modified.
+
 
 ### What is termux?
 
