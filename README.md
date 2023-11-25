@@ -1,7 +1,7 @@
-**`LAST Updated`** : `August 2023`
+**`LAST *officially* Updated`** : `August 2023`
 
 > Unmaintained : Due to Termux not working properly on new Android versions and also Termux not getting maintained properly.
-
+> Remaintained? Maybe?
 > 'UNOFFICIAL' This Is A Fork, And This Is Still In Work, Attention To Some Things May Be Bad.
 ---
 
@@ -66,21 +66,21 @@ pkg upgrade && pkg install git
 
 - Clone this repository
 ```
-git clone --depth=1 https://github.com/adi1090x/termux-desktop.git
+git clone --depth=1 https://github.com/Nottotallynadawr/termux-desktop-for-termux-x11.git
 ```
 
 > **Warning** : I'm assuming that you're doing this on a fresh termux install. If not, I'll suggest you to do so. However the `setup.sh` script backup every file it replace, It's still recommended that you manually backup your files in order to avoid conflicts. <br />
 
 - Change to cloned directory and run `setup.sh` with *--install* option
 ```
-cd termux-desktop
+cd termux-desktop-for-termux-x11
 chmod +x setup.sh
 ./setup.sh --install
 ```
 
 > If script `setup.sh` fails during package installation (due to network issues), you can re-execute it again.
 
-- During installation, you'll be asked to set up password for **VNC** -
+- During installation *original*, you'll be asked to set up password for **VNC** (note: You Don't Get Asked For This Here.) -
 ```
 [*] Setting up VNC Server...
 
@@ -93,7 +93,7 @@ Would you like to enter a view-only password (y/n)? n
 
 > Note that passwords are not visible when you are typing them and minimum password length is 6 characters.
 > Remember the password you typed as it'll be required to connect via vnc client.
-- If everything is okay, you will see this message -
+- Old: If everything is okay, you will see this message -
 ```
 New 'localhost:1 ()' desktop is localhost:1
 
@@ -109,21 +109,11 @@ TigerVNC server sessions:
 X DISPLAY #     PROCESS ID
 :1              XXXXX
 ```
-> It means that X (vnc) server is available on display 'localhost:1'. <br />
+> Old: It means that X (vnc) server is available on display 'localhost:1'. <br />
 
-That's it. `Termux Desktop` is installed successfully. *Restart Termux* and enter `startdesktop` command to start *vncserver* and connect via VNC Client. <br />
-```
-startdesktop
+That's it. `Termux Desktop` is installed successfully. *Restart Termux* and enter `startdesktop` command to start Termux X11 And Desktop And enter `startdesktopvirgl` if You Want A Virgl Hardware Accelerated Envoirment. <br />
 
-[*] Starting VNC Server...
-
-New 'localhost:1 ()' desktop is localhost:1
-
-Starting applications specified in /data/data/com.termux/files/home/.vnc/xstartup
-Log file is /data/data/com.termux/files/home/.vnc/localhost:1.log
-```
-
-### Uninstallation
+### Uninstallation (WIP)
 
 If you ever want to uninstall Termux Desktop, just run `setup.sh` with *--uninstall* option. Just keep the `setup.sh` script and delete the cloned repository to save space. I'll create a separate uninstaller script later. The command below will remove all the packages and delete all the config files it installed, including the changes you've made. So, Be careful there...
 ```
