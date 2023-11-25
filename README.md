@@ -28,7 +28,7 @@ Termux is an *Android terminal emulator* and **Linux environment** app that work
 
 ### How To install termux?
 
-You can install termux form google play store or from f-droid. <br />
+You can install termux from termux github or from f-droid. <br />
 
 - Get it on [Github](https://github.com/termux/termux-app)
 - Download from [F-Droid](https://f-droid.org/packages/com.termux/) <br />
@@ -39,11 +39,21 @@ More information about installation is [here](https://wiki.termux.com/wiki/Main_
 
 Install `Termux` & `Termux:API` on your phone. It's recommended to install *Termux API* application as many desktop elements are dependent on it.
 
+> Old Test Device
 > This setup is created and tested on :
->
+> 
 > Device - **Redmi Note 9 Pro** <br />
 > Android - **Android 10 (Q)** <br />
 > CPU Type - **aarch64**
+
+> New Test Device
+> This setup is created and tested on :
+> 
+> Device - **Redmi Pad** <br />
+> Android - **Android 13, MIUI 14** <br />
+> CPU Type - **aarch64** <br />
+> CPU - **Mediatek Helio G99** <br />
+> RAM - **4 GB**
 
 ### Installation
 
