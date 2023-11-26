@@ -100,7 +100,7 @@ setup_omz() {
 		fi
 	done
 	# installing omz
-	echo -e ${CYAN}"\n[*] Installing Oh-my-zsh... \n
+	echo -e ${CYAN}"\n[*] Installing Oh-my-zsh... \n"
         { reset_color; git clone https://github.com/robbyrussell/oh-my-zsh.git --depth 1 $HOME/.oh-my-zsh; }
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 	cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
