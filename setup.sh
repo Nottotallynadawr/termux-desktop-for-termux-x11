@@ -170,6 +170,7 @@ setup_omz() {
 		 ['ESC','|', '/', '~','HOME','UP','END'], \\
 		 ['CTRL', 'TAB', '=', '-','LEFT','DOWN','RIGHT'] \\
 		]	
+  allow-external-apps = true
 	_EOF_
 	# change shell and reload configs
 	echo -e "${RED} power10k CONFIGURATION MIGHT POP UP, CONTINUING IN 8 SECS!"
