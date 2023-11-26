@@ -100,13 +100,16 @@ setup_omz() {
 		fi
 	done
 	# installing omz
-	echo -e ${CYAN}"\n[*] Installing Oh-my-zsh... \n"
-	{ reset_color; git clone https://github.com/romkatv/powerlevel10k.git --depth 1 $HOME/.oh-my-zsh; }
+	echo -e ${CYAN}"\n[*] Installing Oh-my-zsh... \n
+        { reset_color; git clone https://github.com/robbyrussell/oh-my-zsh.git --depth 1 $HOME/.oh-my-zsh; }
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 	cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
 
 	# Append some aliases
 	cat >> $HOME/.zshrc <<- _EOF_
+ 
 		#------------------------------------------
+                ZSH_THEME="powerlevel10k/powerlevel10k"
 		alias l='ls -lh'
 		alias ll='ls -lah'
 		alias la='ls -a'
