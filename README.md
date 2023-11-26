@@ -86,36 +86,7 @@ chmod +x setup.sh
 
 > If script `setup.sh` fails during package installation (due to network issues), you can re-execute it again.
 
-- During installation *original*, you'll be asked to set up password for **VNC** (note: You Don't Get Asked For This Here.) -
-```
-[*] Setting up VNC Server...
-
-You will require a password to access your desktops.
-
-Password:
-Verify:
-Would you like to enter a view-only password (y/n)? n
-```
-
-> Note that passwords are not visible when you are typing them and minimum password length is 6 characters.
-> Remember the password you typed as it'll be required to connect via vnc client.
-- Old: If everything is okay, you will see this message -
-```
-New 'localhost:1 ()' desktop is localhost:1
-
-Creating default startup script /data/data/com.termux/files/home/.vnc/xstartup
-Creating default config /data/data/com.termux/files/home/.vnc/config
-Starting applications specified in /data/data/com.termux/files/home/.vnc/xstartup
-Log file is /data/data/com.termux/files/home/.vnc/localhost:1.log
-
-[*] Server Is Running...
-
-TigerVNC server sessions:
-
-X DISPLAY #     PROCESS ID
-:1              XXXXX
-```
-> Old: It means that X (vnc) server is available on display 'localhost:1'. <br />
+- During installation You Might See power10k Configure. if your screen gets randomly Rotated, you better go to termux NOW! -
 
 That's it. `Termux Desktop` is installed successfully. *Restart Termux* and enter `startdesktop` command to start Termux X11 And Desktop And enter `startdesktopvirgl` if You Want A Virgl Hardware Accelerated Envoirment. <br />
 
@@ -125,10 +96,6 @@ If you ever want to uninstall Termux Desktop, just run `setup.sh` with *--uninst
 ```
 ./setup.sh --uninstall
 ```
-
-***VNC Client***
-
-Now you need a VNC client app to connect to server. I'm using this Android VNC client: [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android). You can use [TigerVNC](https://tigervnc.org/) if you're trying to connect to server by a computer (Windows or Linux).
 
 Determine port number on which VNC server listens. It can be calculated like this: 5900 + {display number}. So for display 'localhost:1' the port will be 5901. <br />
 
