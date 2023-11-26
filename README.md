@@ -36,7 +36,7 @@ You can install termux from termux github or from f-droid. <br />
 ### Termux:x11 & Termux:Api
 
 - Termux:Api F-droid : https://f-droid.org/packages/com.termux.api/
-- Termux:x11 :
+- Termux:x11 : https://github.com/termux/termux-x11/actions Or https://github.com/termux/termux-x11/releases
 
 More information about installation is [here](https://wiki.termux.com/wiki/Main_Page) <br />
 
