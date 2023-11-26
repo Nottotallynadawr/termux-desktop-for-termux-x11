@@ -38,6 +38,7 @@ You can install termux from termux github or from f-droid. <br />
 - Termux:Api F-droid : https://f-droid.org/packages/com.termux.api/
 - Termux:x11 : https://github.com/termux/termux-x11/actions Or https://github.com/termux/termux-x11/releases
 - Note: the first one Link To Download Termux:x11 App Requires A Github Account To Download The Files
+- An Thing. if you have installed termux from github you also have to install termux api from github, the same applys to fdroid termux, if you install termux from github and termux api from f-droid, guess what? termux api fails to install because android.
 
 More information about installation is [here](https://wiki.termux.com/wiki/Main_Page) <br />
 
