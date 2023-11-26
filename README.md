@@ -33,11 +33,16 @@ You can install termux from termux github or from f-droid. <br />
 - Get it on [Github](https://github.com/termux/termux-app)
 - Download from [F-Droid](https://f-droid.org/packages/com.termux/) <br />
 
+### Termux:x11 & Termux:Api
+
+- Termux:Api F-droid : https://f-droid.org/packages/com.termux.api/
+- Termux:x11 :
+
 More information about installation is [here](https://wiki.termux.com/wiki/Main_Page) <br />
 
 ### Preparation
 
-Install `Termux` & `Termux:API` Also `Termux-x11` on your phone. It's recommended to install *Termux API* application as many desktop elements are dependent on it.
+Install `Termux` & `Termux:API` Also `Termux:x11` on your phone. It's recommended to install *Termux API* application as many desktop elements are dependent on it.
 
 > Old Test Device
 > This setup is created and tested on :
