@@ -226,30 +226,6 @@ setup_config() {
 	fi
 }
 
-## Setup VNC Server
-setup_vnc() {
-	# backup old dir
-	if [[ -d "$HOME/.vnc" ]]; then
-		mv $HOME/.vnc{,.old}
-	fi
-	echo -e ${RED}"\n[*] Setting up VNC Server..."
-	{ reset_color; vncserver -localhost; }
-	sed -i -e 's/# geometry=.*/geometry=1366x768/g' $HOME/.vnc/config
-	cat > $HOME/.vnc/xstartup <<- _EOF_
-		#!/data/data/com.termux/files/usr/bin/bash
-		## This file is executed during VNC server
-		## startup.
-
-		# Launch Openbox Window Manager.
-		openbox-session &
-	_EOF_
-        chmod u+rx $HOME/.vnc/xstartup
-	if [[ $(pidof Xvnc) ]]; then
-		    echo -e ${ORANGE}"[*] Server Is Running..."
-		    { reset_color; vncserver -list; }
-	fi
-}
-
 ## Create Launch Script
 setup_launcher() {
 	file="$HOME/.local/bin/startdesktop"
@@ -268,6 +244,8 @@ am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 termux-x11 -xstartup 'openbox-session'
 
 	_EOF_
+ 
+ chmod +x $file
 	
 		file2="$HOME/.local/bin/startdesktopvirgl"
 	if [[ -f "$file2" ]]; then
@@ -297,6 +275,8 @@ process_id=$(ps -aux | grep '[x]fce4-screensaver' | awk '{print $2}')
 kill "$process_id" > /dev/null 2>&1
 
 	_EOF_
+ 
+ chmod +x $file2
 	
 	if [[ -f "$file" ]]; then
 		echo -e ${GREEN}"[*] Script ${ORANGE}$file ${GREEN}created successfully."
