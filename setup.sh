@@ -103,7 +103,6 @@ setup_omz() {
 	echo -e ${CYAN}"\n[*] Installing Oh-my-zsh... \n"
 	{ reset_color; git clone https://github.com/romkatv/powerlevel10k.git --depth 1 $HOME/.oh-my-zsh; }
 	cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
-	sed -i -e 'ZSH_THEME="powerlevel10k/powerlevel10k"' $HOME/.zshrc
 
 	# Append some aliases
 	cat >> $HOME/.zshrc <<- _EOF_
