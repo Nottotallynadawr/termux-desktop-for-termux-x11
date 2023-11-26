@@ -30,7 +30,6 @@ Termux is an *Android terminal emulator* and **Linux environment** app that work
 
 You can install termux from termux github or from f-droid. <br />
 
-- Get it on [Github](https://github.com/termux/termux-app)
 - Download from [F-Droid](https://f-droid.org/packages/com.termux/) <br />
 
 ### Termux:x11 & Termux:Api
