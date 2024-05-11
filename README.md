@@ -61,7 +61,7 @@ Install `Termux` & `Termux:API` Also `Termux:x11` on your phone. It's recommende
 > This setup is created and tested on :
 > 
 > Device - **Redmi Pad** <br />
-> Android - **Android 13, MIUI 14** <br />
+> Android - **Android 14, HyperOS 1.0** <br />
 > CPU Type - **aarch64** <br />
 > CPU - **Mediatek Helio G99** <br />
 > RAM - **4 GB**
