@@ -86,56 +86,7 @@ setup_base() {
 	reset_color
 }
 
-## Setup OMZ and Termux Configs
-setup_omz() {
-	# backup previous termux and omz files
-	echo -e ${RED}"[*] Setting up OMZ and termux configs..."
-	omz_files=(.oh-my-zsh .termux .zshrc)
-	for file in "${omz_files[@]}"; do
-		echo -e ${CYAN}"\n[*] Backing up $file..."
-		if [[ -f "$HOME/$file" || -d "$HOME/$file" ]]; then
-			{ reset_color; mv -u ${HOME}/${file}{,.old}; }
-		else
-			echo -e ${MAGENTA}"\n[!] $file Doesn't Exist."			
-		fi
-	done
-	# installing omz
-	echo -e ${CYAN}"\n[*] Installing Oh-my-zsh... \n"
-        { reset_color; git clone https://github.com/robbyrussell/oh-my-zsh.git --depth 1 $HOME/.oh-my-zsh; }
-	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-	cp $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
-
-	# Append some aliases
-	cat >> $HOME/.zshrc <<- _EOF_
- 
-		#------------------------------------------
-                ZSH_THEME="powerlevel10k/powerlevel10k"
-		alias l='ls -lh'
-		alias ll='ls -lah'
-		alias la='ls -a'
-		alias ld='ls -lhd'
-		alias p='pwd'
-
-		#alias rm='rm -rf'
-		alias u='cd $PREFIX'
-		alias h='cd $HOME'
-		alias :q='exit'
-		alias grep='grep --color=auto'
-		alias open='termux-open'
-		alias lc='lolcat'
-		alias xx='chmod +x'
-		alias rel='termux-reload-settings'
-
-		#------------------------------------------
-
-		# SSH Server Connections
-
-		# linux (Arch)
-		#alias arch='ssh UNAME@IP -i ~/.ssh/id_rsa.DEVICE'
-
-		# linux sftp (Arch)
-		#alias archfs='sftp -i ~/.ssh/id_rsa.DEVICE UNAME@IP'
-	_EOF_
+## Setup Termux Configs
 
 	# configuring termux
 	echo -e ${CYAN}"\n[*] Configuring Termux..."
