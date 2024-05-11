@@ -166,7 +166,7 @@ setup_config() {
 		echo -e ${CYAN}"\n[*] Copiyng $_config..."
 		{ reset_color; cp -rf $(pwd)/files/$_config $HOME; }
  		 echo -e ${CYAN}"\n[*] Chmodding"
-		{ reset_color; chmod 777 $HOME/.config; }
+		{ reset_color; chmod -R +x $(pwd)/files/$_config ; }
 	done
 	if [[ ! -d "$HOME/Desktop" ]]; then
 		mkdir $HOME/Desktop
