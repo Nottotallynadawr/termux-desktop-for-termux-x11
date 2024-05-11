@@ -88,6 +88,12 @@ cd termux-desktop-for-termux-x11
 chmod +x setup.sh
 ./setup.sh --install
 ```
+- Or Let Me Just Make It Simpler
+  ```
+
+  pkg upgrade -y && pkg install git -y && git clone --depth=1 https://github.com/Nottotallynadawr/termux-desktop-for-termux-x11.git && cd termux-desktop-for-termux-x11 && chmod +x install.sh && bash install.sh --install
+
+  ```
 
 > If script `setup.sh` fails during package installation (due to network issues), you can re-execute it again.
 
