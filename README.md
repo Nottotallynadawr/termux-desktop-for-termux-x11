@@ -24,7 +24,7 @@ Lets start from the beginning... <br />
 
 ### Why This?
 
-The Original Repository Uses VNC, Which Is A Bit Outdated, And This Is To Make It Newer However There Can Be Issues Since Its Modified.
+The Original Repository Uses VNC, Which Is Outdated, And This Is To Make It Newer However There Can Be Issues Since Its Modified.
 
 
 ### What is termux?
