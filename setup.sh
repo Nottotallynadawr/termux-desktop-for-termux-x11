@@ -87,7 +87,7 @@ setup_base() {
 }
 
 ## Setup Termux Configs
-
+setup_termux() {
 	# configuring termux
 	echo -e ${CYAN}"\n[*] Configuring Termux..."
 	if [[ ! -d "$HOME/.termux" ]]; then
@@ -126,11 +126,6 @@ setup_base() {
   allow-external-apps = true
 	_EOF_
 	# change shell and reload configs
-	echo -e "${RED} power10k CONFIGURATION MIGHT POP UP, CONTINUING IN 8 SECS!"
-	sleep 8
-	{ chsh -s zsh; } \
-	&& { echo -e "${GREEN}Changed shell to /bin/zsh"; } \
-	|| { echo -e "${MAGENTA}Failed to change shell. Please run $ chsh -s zsh"; }
 
 	{ termux-reload-settings; } \
 	&& { echo -e "${GREEN}Settings reloaded successfully"; } \
@@ -140,7 +135,6 @@ setup_base() {
 	&& { echo -e "${GREEN}Ran termux-setup-storage successfully, you should now have a ~/storage folder"; } \
 	|| { echo -e "${MAGENTA}Failed to execute $ termux-setup-storage"; }
 }
-
 ## Configuration
 setup_config() {
 	# ensure /etc/machine-id exists for xfce4-settings
@@ -260,7 +254,7 @@ post_msg() {
 install_td() {
 	banner
 	setup_base
-	setup_omz
+	setup_termux
 	setup_config
 	setup_vnc
 	setup_launcher
