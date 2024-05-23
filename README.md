@@ -8,6 +8,7 @@
 > 
 > 'UNOFFICIAL' This Is A Fork, And This Is Still In Work, Attention To Some Things May Be Bad.
 >
+> adi1090x For Original Project And ArchCraft Themes
 ---
 
 ![logo](./previews/logo.png) <br />
