@@ -23,9 +23,10 @@ Alright, Lets just get this straight, these are just some **dotfiles** & **scrip
 
 Lets start from the beginning... <br />
 
-### Why This?
+### Why This Does Exist ?
 
-The Original Repository Uses VNC, Which Is Outdated, And This Is To Make It Newer However There Can Be Issues Since Its Modified.
+Termux-Desktop Is A Great Project And I Like It! And I Made A Fork Of It To Try And Make It In-date By Adding Arch-Craft Themes (WIP) And I Also Modified It So I Can 
+Run It In Termux-x11,
 
 
 ### What is termux?
@@ -101,6 +102,8 @@ chmod +x setup.sh
 - During installation You Might See power10k Configure. if your screen gets randomly Rotated, you better go to termux NOW! -
 
 That's it. `Termux Desktop` is installed successfully. *Restart Termux* and enter `startdesktop` command to start Termux X11 And Desktop And enter `startdesktopvirgl` if You Want A Virgl Hardware Accelerated Envoirment. <br />
+
+> NOTE: VirGL Environment Is Unstable!
 
 ### Uninstallation (WIP)
 
