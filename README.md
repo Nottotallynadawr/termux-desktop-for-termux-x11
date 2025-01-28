@@ -52,14 +52,6 @@ More information about installation is [here](https://wiki.termux.com/wiki/Main_
 
 Install `Termux` & `Termux:API` Also `Termux:x11` on your phone. It's recommended to install *Termux API* application as many desktop elements are dependent on it.
 
-> Old Test Device
-> This setup is created and tested on :
-> 
-> Device - **Redmi Note 9 Pro** <br />
-> Android - **Android 10 (Q)** <br />
-> CPU Type - **aarch64**
-
-> New Test Device
 > This setup is created and tested on :
 > 
 > Device - **Redmi Pad** <br />
@@ -103,26 +95,15 @@ chmod +x setup.sh
 
 That's it. `Termux Desktop` is installed successfully. *Restart Termux* and enter `startdesktop` command to start Termux X11 And Desktop And enter `startdesktopvirgl` if You Want A Virgl Hardware Accelerated Envoirment. <br />
 
-> NOTE: VirGL Environment Is Unstable!
+> Do note that the VirGL environment is a bit unstable 
 
-### Uninstallation (WIP)
+### Uninstall (WIP)
 
 If you ever want to uninstall Termux Desktop, just run `setup.sh` with *--uninstall* option. Just keep the `setup.sh` script and delete the cloned repository to save space. I'll create a separate uninstaller script later. The command below will remove all the packages and delete all the config files it installed, including the changes you've made. So, Be careful there...
 ```
 ./setup.sh --uninstall
 ```
 
-Determine port number on which VNC server listens. It can be calculated like this: 5900 + {display number}. So for display 'localhost:1' the port will be 5901. <br />
-
-Now open the VNC Viewer application and create a new connection with the following information (assuming that port is 5901) - <br />
-```
-Address:
-127.0.0.1:5901
-
-Name:
-Termux
-```
-Now launch it. You will be prompted for `password` that you entered during installation. After entering password, you'll be headed directly to this desktop - <br />
 
 ![desktop](./previews/desk_1.png) <br />
 
