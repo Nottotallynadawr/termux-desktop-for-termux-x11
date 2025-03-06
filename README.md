@@ -1,12 +1,7 @@
-**`LAST *officially* Updated`** : `August 2023`
+`LAST officially updated`: `August 2023`
 
-> Unmaintained : Due to Termux not working properly on new Android versions and also Termux not getting maintained properly.
->
-> 
+ 
 > Remaintained? Maybe?
->
-> 
-> 'UNOFFICIAL' This Is A Fork, And This Is Still In Work, Attention To Some Things May Be Bad.
 >
 > adi1090x For Original Project And ArchCraft Themes
 ---
