@@ -20,7 +20,7 @@ Lets start from the beginning... <br />
 
 ### Why This Does Exist ?
 
-Termux-Desktop Is A Great Project And I Like It! And I Made A Fork Of It To Try And Make It In-date By Adding Arch-Craft Themes (WIP) And I Also Modified It So I Can 
+Termux-Desktop Is A Great project and I Like It! So I Made A Fork Of It To Try And make it better By adding Arch-Craft themes (WIP) and I also modified It, So it can 
 Run It In Termux-x11,
 
 
@@ -86,13 +86,14 @@ chmod +x setup.sh
 
 > If script `setup.sh` fails during package installation (due to network issues), you can re-execute it again.
 
-- During installation You Might See power10k Configure. if your screen gets randomly Rotated, you better go to termux NOW! -
+That's it. `Termux Desktop` is installed successfully. *Restart Termux* and enter `startdesktop` command to start Termux X11 Desktop Or enter `startdesktopvirgl` if You Want A Virgl Hardware Accelerated Envoirment. <br />
 
-That's it. `Termux Desktop` is installed successfully. *Restart Termux* and enter `startdesktop` command to start Termux X11 And Desktop And enter `startdesktopvirgl` if You Want A Virgl Hardware Accelerated Envoirment. <br />
-
-> Do note that the VirGL environment is a bit unstable 
+> Do note that the VirGL environment is unstable 
 
 ### Uninstall (WIP)
+
+> Not gonna be finished until i get everything done. (Which is gonna take a while.)
+> Remaining of the stuff here is pretty much from the stock termux desktop.
 
 If you ever want to uninstall Termux Desktop, just run `setup.sh` with *--uninstall* option. Just keep the `setup.sh` script and delete the cloned repository to save space. I'll create a separate uninstaller script later. The command below will remove all the packages and delete all the config files it installed, including the changes you've made. So, Be careful there...
 ```
