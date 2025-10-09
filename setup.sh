@@ -188,6 +188,7 @@ echo [!] Make Sure The X11 App Resolution Is Custom And Set To 1366x768! So It F
 sleep 8
 am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 termux-x11 -xstartup 'openbox-session'
+xcompmgr &
 
 	_EOF_
  
