@@ -58,7 +58,7 @@ usage() {
 _pkgs=(bc bmon calc calcurse curl dbus desktop-file-utils elinks nitrogen fontconfig-utils fsmon \
 		geany git gtk2 gtk3 htop imagemagick jq leafpad mandoc mpc mpd mutt ncmpcpp \
 		ncurses-utils neofetch firefox obconf-qt openbox openssl-tool polybar ranger rofi \
-		startup-notification termux-x11-nightly termux-api thunar kitty vim wget xarchiver xbitmaps xcompmgr \
+		startup-notification termux-x11-nightly termux-api thunar vim wget xarchiver xbitmaps xcompmgr \
 		xfce4-settings xfce4-terminal xmlstarlet xorg-font-util xorg-xrdb pulseaudio virglrenderer-android zsh)
 
 setup_base() {
