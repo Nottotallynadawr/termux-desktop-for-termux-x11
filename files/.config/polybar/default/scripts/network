@@ -1,4 +1,4 @@
-
+#!/bin/bash
 count=0
 connected="Online"
 disconnected="Offline"
