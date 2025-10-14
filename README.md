@@ -1,15 +1,9 @@
-**`LAST *officially* Updated`** : `August 2023`
+`LAST officially updated`: `August 2023`
 
-> Unmaintained : Due to Termux not working properly on new Android versions and also Termux not getting maintained properly.
+ 
+> An update is coming, adding back what got removed and a theme refresh.
 >
-> 
-> Remaintained? Maybe?
->
-> hey, just telling you there's an update coming.
-> 
-> 'UNOFFICIAL' This Is A Fork, And This Is Still In Work, Attention To Some Things May Be Bad.
->
-> adi1090x For Original Project And ArchCraft Themes
+> Thank you adi1090x For the original project and archcraft dotfiles.
 ---
 
 ![logo](./previews/logo.png) <br />
@@ -24,11 +18,9 @@ Alright, Let's just get this straight, these are just some **dotfiles** & **scri
 
 Lets start from the beginning... <br />
 
-### Why This Does Exist ?
+### Why i'm making this?
 
-Termux-Desktop Is A Great Project And I Like It! And I Made A Fork Of It To Try And Make It In-date By Adding Arch-Craft Themes (WIP) And I Also Modified It So I Can 
-Run It In Termux-x11,
-
+I quite like the original project but i can't stand the VNC environment, so i made this.
 
 ### What is termux?
 
@@ -45,7 +37,7 @@ You can install termux from termux github or from f-droid. <br />
 - Termux:Api F-droid : https://f-droid.org/packages/com.termux.api/
 - Termux:x11 : https://github.com/termux/termux-x11/actions Or https://github.com/termux/termux-x11/releases
 - Note: the first one Link To Download Termux:x11 App Requires A Github Account To Download The Files
-- An Thing. if you have installed termux from github you also have to install termux api from github, the same applys to fdroid termux, if you install termux from github and termux api from f-droid, guess what? termux api fails to install because It Simply Conflicts.
+- An Thing. if you have installed termux from github you also have to install termux api from github, the same applies to fdroid termux, if you install termux from github and termux api from f-droid, it won't work (unless something has changed but i don't know if that's really the case.)
 
 More information about installation is [here](https://wiki.termux.com/wiki/Main_Page) <br />
 
@@ -83,7 +75,7 @@ cd termux-desktop-for-termux-x11
 chmod +x setup.sh
 ./setup.sh --install
 ```
-- Or Let Me Just Make It Simpler
+- Or just make this all a single command
   ```
 
   pkg upgrade -y && pkg install git -y && git clone --depth=1 https://github.com/Nottotallynadawr/termux-desktop-for-termux-x11.git && cd termux-desktop-for-termux-x11 && chmod +x setup.sh && bash setup.sh --install
@@ -92,19 +84,18 @@ chmod +x setup.sh
 
 > If script `setup.sh` fails during package installation (due to network issues), you can re-execute it again.
 
-- During installation You Might See power10k Configure. if your screen gets randomly Rotated, you better go to termux NOW! -
+That's it. `Termux Desktop` is installed successfully. *Restart Termux* and enter `startdesktop` command to start Termux X11 Desktop Or enter `startdesktopvirgl` if You Want A Virgl Hardware Accelerated Envoirment. <br />
 
-That's it. `Termux Desktop` is installed successfully. *Restart Termux* and enter `startdesktop` command to start Termux X11 And Desktop And enter `startdesktopvirgl` if You Want A Virgl Hardware Accelerated Envoirment. <br />
+> Notice: VirGL is not very stable, i might end up trying to fix it but i'm not sure if i will do that.
 
-> Do note that the VirGL environment is a bit unstable 
-
-### Uninstall (WIP)
+### Uninstall (I haven't touched the uninstall script so it might not be working.)
 
 If you ever want to uninstall Termux Desktop, just run `setup.sh` with *--uninstall* option. Just keep the `setup.sh` script and delete the cloned repository to save space. I'll create a separate uninstaller script later. The command below will remove all the packages and delete all the config files it installed, including the changes you've made. So, Be careful there...
 ```
 ./setup.sh --uninstall
 ```
 
+All of these screenshots are old, it may not look the same.
 
 ![desktop](./previews/desk_1.png) <br />
 
