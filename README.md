@@ -1,7 +1,7 @@
 `LAST officially updated`: `August 2023`
 
  
-> Remaintained? Maybe?
+> An update is coming, adding back what got removed and a theme refresh.
 >
 > Thank you adi1090x For the original project and archcraft configuration files.
 ---
