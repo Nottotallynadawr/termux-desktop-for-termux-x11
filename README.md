@@ -3,7 +3,7 @@
  
 > Remaintained? Maybe?
 >
-> adi1090x For Original Project And ArchCraft Themes
+> Thank you adi1090x For the original project and archcraft configuration files.
 ---
 
 ![logo](./previews/logo.png) <br />
@@ -18,11 +18,9 @@ Alright, Let's just get this straight, these are just some **dotfiles** & **scri
 
 Lets start from the beginning... <br />
 
-### Why This Does Exist ?
+### Why i'm making this?
 
-Termux-Desktop Is A Great project and I Like It! So I Made A Fork Of It To Try And make it better By adding Arch-Craft themes (WIP) and I also modified It, So it can 
-Run It In Termux-x11,
-
+I quite like the original project but i can't stand the VNC environment, so i made this.
 
 ### What is termux?
 
@@ -39,7 +37,7 @@ You can install termux from termux github or from f-droid. <br />
 - Termux:Api F-droid : https://f-droid.org/packages/com.termux.api/
 - Termux:x11 : https://github.com/termux/termux-x11/actions Or https://github.com/termux/termux-x11/releases
 - Note: the first one Link To Download Termux:x11 App Requires A Github Account To Download The Files
-- An Thing. if you have installed termux from github you also have to install termux api from github, the same applys to fdroid termux, if you install termux from github and termux api from f-droid, guess what? termux api fails to install because It Simply Conflicts.
+- An Thing. if you have installed termux from github you also have to install termux api from github, the same applies to fdroid termux, if you install termux from github and termux api from f-droid, it won't work (unless something has changed but i don't know if that's really the case.)
 
 More information about installation is [here](https://wiki.termux.com/wiki/Main_Page) <br />
 
@@ -77,7 +75,7 @@ cd termux-desktop-for-termux-x11
 chmod +x setup.sh
 ./setup.sh --install
 ```
-- Or Let Me Just Make It Simpler
+- Or just make this all a single command
   ```
 
   pkg upgrade -y && pkg install git -y && git clone --depth=1 https://github.com/Nottotallynadawr/termux-desktop-for-termux-x11.git && cd termux-desktop-for-termux-x11 && chmod +x setup.sh && bash setup.sh --install
@@ -88,18 +86,16 @@ chmod +x setup.sh
 
 That's it. `Termux Desktop` is installed successfully. *Restart Termux* and enter `startdesktop` command to start Termux X11 Desktop Or enter `startdesktopvirgl` if You Want A Virgl Hardware Accelerated Envoirment. <br />
 
-> Do note that the VirGL environment is unstable 
+> Notice: VirGL is not very stable, i might end up trying to fix it but i'm not sure if i will do that.
 
-### Uninstall (WIP)
-
-> Not gonna be finished until i get everything done. (Which is gonna take a while.)
-> Remaining of the stuff here is pretty much from the stock termux desktop.
+### Uninstall (I haven't touched the uninstall script so it might not be working.)
 
 If you ever want to uninstall Termux Desktop, just run `setup.sh` with *--uninstall* option. Just keep the `setup.sh` script and delete the cloned repository to save space. I'll create a separate uninstaller script later. The command below will remove all the packages and delete all the config files it installed, including the changes you've made. So, Be careful there...
 ```
 ./setup.sh --uninstall
 ```
 
+All of these screenshots are old, it may not look the same.
 
 ![desktop](./previews/desk_1.png) <br />
 
