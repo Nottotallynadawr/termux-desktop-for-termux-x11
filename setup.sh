@@ -182,10 +182,9 @@ setup_launcher() {
 	{ reset_color; touch $file; chmod +x $file; }
 	cat > $file <<- _EOF_
 #!/bin/bash
-## This Is Non-Hardware Accelerated, Made Only By Nadawr. btw
 
-echo [!] Make Sure The X11 App Resolution Is Custom And Set To 1366x768! So It Fits Correctly And The App Lauches In 8 Secs
-sleep 8
+echo [!] Starting now, it is heavily recommended that the resolution is set to 1366x768.
+sleep 5
 am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity > /dev/null 2>&1
 termux-x11 -xstartup 'openbox-session'
 xcompmgr &
@@ -202,11 +201,11 @@ xcompmgr &
 	{ reset_color; touch $file; chmod +x $file; }
 	cat > $file2 <<- _EOF_
 #!/bin/bash
-## This Is By phoenixbyrd All Of This Is Found On Termux XFCE install Script. So I Took It, Atleast I Gave Him Credits Huh?
-## Btw This Is For Hardware Accelerated By Virgl
+## Thank you phoenixbyrd for the script that had some of these stuff
 ## Start Graphical Server
-echo [!] Make Sure The X11 App Resolution Is Custom And Set To 1366x768! So It Fits Correctly And Everything Starts In 8 Secs
-sleep 8
+echo [!] Starting now, it is heavily recommended that the resolution is set to 1366x768.
+echo [!] Hardware acceleration is enabled, expect some bugs along the way.
+sleep 5
 MESA_NO_ERROR=1 MESA_GL_VERSION_OVERRIDE=4.3COMPAT MESA_GLES_VERSION_OVERRIDE=4.3 virgl_test_server_android --angle-gl & > /dev/null 2>&1
 sleep 1
 XDG_RUNTIME_DIR=${TMPDIR} termux-x11 :1.0 &
