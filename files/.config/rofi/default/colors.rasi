@@ -1,6 +1,14 @@
-/* Color-Scheme */
+/* Copyright (C) 2020-2025 Aditya Shakya <adi1090x@gmail.com> */
+
+/* Colors */
 
 * {
+    background:     #222d32;
+    background-alt: #2c3a41;
+    foreground:     #c4c7c5;
+    selected:       #00BCD4;
+    active:         #61c766;
+    urgent:         #ec7875;
     BG:    #212B30ff;
     BGA:   #263035ff;
     FG:    #C4C7C5ff;
